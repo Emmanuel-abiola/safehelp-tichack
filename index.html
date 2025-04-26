@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SafeHelp - Instant Emergency Response</title> <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"> <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .phone-mockup {
+            max-width: 280px; /* Adjusted size slightly */
+            border: 16px solid #1e3a8a; /* Darker blue border */
+            border-radius: 30px;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15); /* Enhanced shadow */
+            overflow: hidden;
+        }
+        html {
+             scroll-behavior: smooth;
+        }
+        /* Custom styles for FAQ accordion */
+        details > summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        details > summary::-webkit-details-marker { display: none; }
+        details summary .icon::before { content: '\F282'; font-family: 'bootstrap-icons'; transition: transform 0.2s ease-in-out; display: inline-block; }
+        details[open] summary .icon::before { transform: rotate(180deg); }
+
+        /* Subtle background pattern for hero (optional) */
+         .hero-bg-pattern {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: radial-gradient(circle at top left, rgba(255, 255, 255, 0.05) 0%, transparent 30%);
+            opacity: 0.5;
+            z-index: 0;
+        } 
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <header class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white fixed top-0 left-0 right-0 z-50 shadow-lg"> <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold tracking-tight">SafeHelp</a> <div class="hidden md:flex space-x-6 items-center">
+                <a href="#home" class="hover:text-blue-300 transition-colors font-medium">Home</a>
+                <a href="#about" class="hover:text-blue-300 transition-colors font-medium">About</a>
+                <a href="#pricing" class="hover:text-blue-300 transition-colors font-medium">Pricing</a>
+                <a href="#faq" class="hover:text-blue-300 transition-colors font-medium">FAQs</a>
+                <a href="#team" class="hover:text-blue-300 transition-colors font-medium">Team</a>
+                <a href="hotline.html" class="ml-4 bg-white text-blue-700 px-5 py-2 rounded-full font-semibold hover:bg-gray-100 hover:shadow-lg transition-all text-sm shadow">Try Safe Help Now</a> </div>
+            <div class="md:hidden">
+                <button class="text-white focus:outline-none"> <i class="bi bi-list text-2xl"></i> </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home" class="relative pt-32 pb-16 md:pt-40 md:pb-24 flex items-center justify-center bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 text-white px-6 min-h-[90vh]"> <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
+                <div data-aos="fade-right">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight !leading-tight md:!leading-tight lg:!leading-tight"> Instant Help, <br class="hidden md:inline"/><span class="text-blue-300">When Seconds Matter Most.</span>
+                    </h1>
+                    <p class="mt-5 text-lg text-indigo-100 max-w-xl">Every year, over 2,000 lives are lost due to delayed emergency response. SafeHelp activates automatically, sending location, video, and calls when you can't.</p>
+                    <a href="hotline.html" class="mt-8 inline-block bg-white text-blue-800 px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-gray-100 hover:shadow-xl transform hover:scale-105 transition-all">Try Safe Help Now – Free Plan Available</a>
+
+                    <div class="mt-8 flex space-x-6 items-center text-indigo-200" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-center text-sm">
+                            <i class="bi bi-mic-fill mr-2 text-xl"></i> Voice Activated
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <i class="bi bi-geo-alt-fill mr-2 text-xl"></i> Live Location
+                        </div>
+                        <div class="flex items-center text-sm">
+                            <i class="bi bi-camera-video-fill mr-2 text-xl"></i> Video Stream
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center" data-aos="fade-left" data-aos-delay="200">
+                    <div class="phone-mockup transform transition duration-500 hover:scale-105">
+                        <img src="https://dummyimage.com/240x480/e0f2fe/0c4a6e.png&text=SafeHelp+Live" alt="SafeHelp App Demo" class="w-full h-auto rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gradient-to-r from-gray-50 to-blue-50 py-10 text-center shadow-inner"> <div class="container mx-auto px-6">
+                <p class="text-2xl md:text-3xl font-semibold text-indigo-800 italic tracking-tight">"Your safety, one word away."</p>
+             </div>
+        </section>
+
+        <section class="py-16 md:py-20 bg-white"> <div class="container mx-auto px-6">
+                <div class="text-center mb-12 md:mb-16" data-aos="fade-up">
+                     <h2 class="text-3xl md:text-4xl font-bold text-blue-900">How SafeHelp Protects You</h2> <p class="text-gray-600 mt-3 max-w-2xl mx-auto">Leveraging automation and real-time data to bridge the critical gap in emergencies.</p>
+                </div>
+                 <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-xl shadow-lg text-center border border-blue-100" data-aos="zoom-in-up">
+                        <div class="text-blue-600 text-5xl mb-5 inline-block p-3 bg-white rounded-full shadow-md"><i class="bi bi-mic-fill"></i></div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Voice & Shortcut Activation</h3>
+                        <p class="mt-2 text-gray-600 text-sm leading-relaxed">Trigger help instantly with a safe word or keyboard shortcut, even when you can't reach your phone.</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-xl shadow-lg text-center border border-blue-100" data-aos="zoom-in-up" data-aos-delay="100">
+                         <div class="text-blue-600 text-5xl mb-5 inline-block p-3 bg-white rounded-full shadow-md"><i class="bi bi-geo-alt-fill"></i></div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Real-time Location & Video</h3>
+                        <p class="mt-2 text-gray-600 text-sm leading-relaxed">Shares your exact location and live video with responders & contacts, providing vital context.</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-xl shadow-lg text-center border border-blue-100" data-aos="zoom-in-up" data-aos-delay="200">
+                        <div class="text-blue-600 text-5xl mb-5 inline-block p-3 bg-white rounded-full shadow-md"><i class="bi bi-telephone-outbound-fill"></i></div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Hands-Free Auto-Call</h3>
+                        <p class="mt-2 text-gray-600 text-sm leading-relaxed">Automatically connects you to local emergency services, ensuring help is dispatched rapidly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="about" class="py-16 md:py-24 bg-white overflow-hidden"> <div class="container mx-auto px-6">
+
+                <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center mb-16 md:mb-24">
+                    <div data-aos="fade-right">
+                        <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4 !leading-tight">What is SafeHelp?</h2>
+                        <p class="text-lg text-gray-700 mb-4">SafeHelp is a cutting-edge emergency response app designed to save lives in high-risk situations. Whether you're under attack, in an accident, or being harassed, SafeHelp is always listening—ready to call for help when you can’t.</p>
+                        <p class="text-gray-600">It acts as your automated lifeline, bridging the gap between an incident and the arrival of help.</p>
+                    </div>
+                    <div class="flex justify-center items-center" data-aos="fade-left">
+                         <div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-10 rounded-full shadow-xl text-white">
+                            <i class="bi bi-shield-shaded text-8xl"></i>
+                        </div>
+                        </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center mb-16 md:mb-24">
+                     <div class="flex justify-center items-center order-last md:order-first" data-aos="fade-right">
+                         <div class="bg-gradient-to-br from-purple-500 to-indigo-600 p-10 rounded-full shadow-xl text-white">
+                             <i class="bi bi-clock-history text-8xl"></i>
+                         </div>
+                         </div>
+                    <div class="order-first md:order-last" data-aos="fade-left">
+                        <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4 !leading-tight">Why SafeHelp?</h2>
+                        <p class="text-lg text-gray-700 mb-4">Because <span class="font-semibold text-indigo-600">every second counts</span>. Many victims of violence or accidents are unable to make a call or reach for their phones. Delays in response can have devastating consequences.</p>
+                        <p class="text-gray-600">SafeHelp bypasses these barriers with automation, precision, and urgency, providing critical information instantly to accelerate help.</p>
+                    </div>
+                </div>
+
+                <div class="text-center mb-12 md:mb-16" data-aos="fade-up">
+                     <h2 class="text-3xl md:text-4xl font-bold text-blue-900">How Does It Work?</h2>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 text-left max-w-5xl mx-auto">
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-blue-500" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="font-semibold text-xl mb-2 text-blue-700 flex items-center"><span class="text-2xl mr-2"><i class="bi bi-activity"></i></span>Trigger</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Simply say your chosen safe word (e.g., "help") or press a keyboard shortcut (like Ctrl) when in distress.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-indigo-500" data-aos="fade-up" data-aos-delay="200">
+                         <h3 class="font-semibold text-xl mb-2 text-indigo-700 flex items-center"><span class="text-2xl mr-2"><i class="bi bi-broadcast-pin"></i></span>Action</h3>
+                         <p class="text-gray-600 text-sm leading-relaxed">Instantly sends live location, starts a secure video feed, & places an automated call to emergency services.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg border-t-4 border-purple-500" data-aos="fade-up" data-aos-delay="300">
+                         <h3 class="font-semibold text-xl mb-2 text-purple-700 flex items-center"><span class="text-2xl mr-2"><i class="bi bi-shield-lock-fill"></i></span>Backup</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Securely saves location/video & optionally sends alerts to pre-selected trusted contacts or authorities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="pricing" class="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-blue-100"> <div class="container mx-auto px-6">
+                <div class="text-center mb-12 md:mb-16" data-aos="fade-up">
+                    <h2 class="text-4xl font-bold text-gray-900">Plans and Pricing</h2>
+                    <p class="text-gray-600 mt-3 max-w-xl mx-auto">Choose the plan that fits your needs. Safety should be accessible to all.</p>
+                    <div class="mt-8 inline-flex bg-gray-200 rounded-lg p-1 space-x-1" data-aos="fade-up" data-aos-delay="100">
+                        <button class="px-6 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-300 focus:outline-none">Monthly</button>
+                        <button class="px-6 py-2 rounded-md text-sm font-medium bg-white text-blue-700 shadow-sm focus:outline-none relative">
+                            Annual <span class="absolute -top-2 -right-2 bg-green-100 text-green-700 text-xs font-semibold px-2 py-0.5 rounded-full">Save 16%</span>
+                         </button>
+                     </div>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
+                    <div class="border border-gray-200 rounded-lg p-8 flex flex-col bg-white shadow-sm transition-shadow hover:shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Free</h3>
+                        <div class="mb-6"><span class="text-5xl font-bold text-gray-900">₦0</span><p class="text-sm text-gray-500 mt-1">Always free</p></div>
+                        <p class="font-medium text-gray-700 mb-3">For basic personal safety</p>
+                        <ul class="space-y-3 text-gray-600 mb-8 flex-grow">
+                            <li class="flex items-start"><i class="bi bi-check-lg text-blue-600 mr-2 mt-1 shrink-0"></i>Emergency activation</li>
+                            <li class="flex items-start"><i class="bi bi-check-lg text-blue-600 mr-2 mt-1 shrink-0"></i>Real-time location</li>
+                            <li class="flex items-start"><i class="bi bi-check-lg text-blue-600 mr-2 mt-1 shrink-0"></i>Auto-call hotline</li>
+                        </ul>
+                        <a href="#" class="mt-auto w-full text-center border border-gray-300 bg-white text-gray-800 py-3 px-6 rounded-lg font-semibold hover:bg-gray-50 transition-all">Get started free</a>
+                    </div>
+                    <div class="border-2 border-blue-500 rounded-lg p-8 flex flex-col relative bg-white shadow-lg" data-aos="fade-up" data-aos-delay="300"> <span class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-blue-600 text-white text-xs font-bold px-4 py-1 rounded-full shadow">POPULAR</span> <h3 class="text-xl font-semibold text-blue-800 mb-4 mt-3">Pro</h3> <div class="mb-6"><span class="text-5xl font-bold text-gray-900">₦2,000</span><p class="text-sm text-gray-500 mt-1">Per user/month</p></div>
+                         <p class="font-medium text-gray-700 mb-3">Great for enhanced security</p>
+                         <ul class="space-y-3 text-gray-600 mb-8 flex-grow">
+                            <li class="flex items-start"><i class="bi bi-check-lg text-blue-600 mr-2 mt-1 shrink-0"></i>All Basic features</li>
+                            <li class="flex items-start"><i class="bi bi-check-lg text-blue-600 mr-2 mt-1 shrink-0"></i>Live video feed</li>
+                            <li class="flex items-start"><i class="bi bi-check-lg text-blue-600 mr-2 mt-1 shrink-0"></i>Emergency contact alerts</li>
+                            <li class="flex items-start"><i class="bi bi-check-lg text-blue-600 mr-2 mt-1 shrink-0"></i>Incident history</li>
+                        </ul>
+                        <a href="#" class="mt-auto w-full text-center bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-all shadow hover:shadow-md">Choose Pro Plan</a> </div>
+                    <div class="border border-gray-700 rounded-lg p-8 flex flex-col bg-gray-900 text-white shadow-sm transition-shadow hover:shadow-lg" data-aos="fade-up" data-aos-delay="400">
+                         <h3 class="text-xl font-semibold text-white mb-4">Enterprise</h3>
+                          <div class="mb-6"><span class="text-5xl font-bold text-white">Custom</span><p class="text-sm text-gray-400 mt-1">Contact us for tailored pricing</p></div>
+                         <p class="font-medium text-gray-300 mb-3">For multiple teams & organizations</p>
+                         <ul class="space-y-3 text-gray-300 mb-8 flex-grow">
+                            <li class="flex items-start"><i class="bi bi-check-lg text-gray-300 mr-2 mt-1 shrink-0"></i>Everything in Pro</li>
+                            <li class="flex items-start"><i class="bi bi-check-lg text-gray-300 mr-2 mt-1 shrink-0"></i>Admin dashboard</li>
+                            <li class="flex items-start"><i class="bi bi-check-lg text-gray-300 mr-2 mt-1 shrink-0"></i>Custom routing</li>
+                            <li class="flex items-start"><i class="bi bi-check-lg text-gray-300 mr-2 mt-1 shrink-0"></i>Bulk user management</li>
+                             <li class="flex items-start"><i class="bi bi-check-lg text-gray-300 mr-2 mt-1 shrink-0"></i>Priority support</li>
+                        </ul>
+                        <a href="#" class="mt-auto w-full text-center bg-white text-gray-900 py-3 px-6 rounded-lg font-semibold hover:bg-gray-200 transition-all">Contact Sales</a>
+                    </div>
+                </div>
+                 <div class="text-center mt-12 text-gray-600" data-aos="fade-up">
+                    <p><strong>Note:</strong> Safe Help Basic is free for students, NGOs, and verified activists. <a href="#" class="text-blue-600 hover:underline font-medium">Apply here</a>.</p>
+                </div>
+            </div>
+        </section>
+
+
+         <section id="faq" class="py-16 md:py-24 bg-white"> <div class="container mx-auto px-6">
+                <div class="text-center mb-12 md:mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Have Questions? We Have Answers.</h2>
+                    <p class="text-gray-600 mt-3 max-w-xl mx-auto">Find clarity on how SafeHelp works and protects your data.</p>
+                </div>
+                <div class="max-w-3xl mx-auto space-y-4" data-aos="fade-up" data-aos-delay="100">
+                    <details class="bg-blue-50 p-5 rounded-lg shadow-sm border border-blue-100 group transition hover:bg-blue-100">
+                         <summary class="font-semibold text-lg text-gray-800">Does Safe Help work without internet? <span class="icon text-blue-600 text-xl ml-auto"></span></summary>
+                        <p class="mt-3 text-gray-700 leading-relaxed text-sm">Some features like SMS location alerts and direct hotline calls (if cellular service is available) can work offline. However, real-time location tracking updates and live video streaming require an active internet connection (Wi-Fi or mobile data).</p>
+                    </details>
+                    <details class="bg-blue-50 p-5 rounded-lg shadow-sm border border-blue-100 group transition hover:bg-blue-100">
+                         <summary class="font-semibold text-lg text-gray-800">What if I trigger it by accident? <span class="icon text-blue-600 text-xl ml-auto"></span></summary>
+                        <p class="mt-3 text-gray-700 leading-relaxed text-sm">Don't worry! You'll have a brief window (typically 5 seconds, configurable in settings) to cancel a false trigger before any alerts or calls are initiated. Just tap the cancel button on screen.</p>
+                    </details>
+                    <details class="bg-blue-50 p-5 rounded-lg shadow-sm border border-blue-100 group transition hover:bg-blue-100">
+                         <summary class="font-semibold text-lg text-gray-800">Can I choose who gets my alert? <span class="icon text-blue-600 text-xl ml-auto"></span></summary>
+                        <p class="mt-3 text-gray-700 leading-relaxed text-sm">Yes, absolutely. In the app settings, you can designate specific trusted contacts (family, friends, neighbors) who will receive emergency alerts including your location and a link to the live video feed (Pro plan) when Safe Help is activated.</p>
+                    </details>
+                    <details class="bg-blue-50 p-5 rounded-lg shadow-sm border border-blue-100 group transition hover:bg-blue-100">
+                         <summary class="font-semibold text-lg text-gray-800">Is my data secure? <span class="icon text-blue-600 text-xl ml-auto"></span></summary>
+                        <p class="mt-3 text-gray-700 leading-relaxed text-sm">Protecting your privacy and data is our top priority. We use end-to-end encryption for communications and secure, compliant cloud storage for video and location data. Access is strictly controlled.</p>
+                    </details>
+                     <details class="bg-blue-50 p-5 rounded-lg shadow-sm border border-blue-100 group transition hover:bg-blue-100">
+                         <summary class="font-semibold text-lg text-gray-800">How is Safe Help different from just calling 911? <span class="icon text-blue-600 text-xl ml-auto"></span></summary>
+                        <p class="mt-3 text-gray-700 leading-relaxed text-sm">Safe Help excels in speed, automation, and providing crucial context. It can be triggered hands-free when you might be unable to dial. It instantly provides live video and precise location, giving responders immediate situational awareness, which can significantly improve response effectiveness compared to a voice-only call.</p>
+                    </details>
+                 </div>
+             </div>
+        </section>
+
+
+        <section id="team" class="py-16 md:py-24 bg-gradient-to-b from-indigo-50 to-purple-100"> <div class="container mx-auto px-6">
+                <div class="text-center mb-12 md:mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900">The People Behind Safe Help</h2>
+                    <p class="text-gray-600 mt-3 max-w-xl mx-auto">Meet the passionate individuals dedicated to making our world safer.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12">
+                    <div class="text-center bg-white p-8 rounded-xl shadow-lg border border-gray-100 transition transform hover:-translate-y-2" data-aos="fade-up">
+                        <img src="https://dummyimage.com/120x120/0c4a6e/ffffff&text=YN" alt="[Your Name]" class="w-24 h-24 md:w-32 md:h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-800">Emmanuel_the_Great</h3>
+                        <p class="text-indigo-600 font-medium mb-2">Founder & Developer</p>
+                        <p class="text-gray-500 text-sm leading-relaxed">Inspired developer building life-saving solutions through code, bridging tech and personal safety.</p>
+                    </div>
+                     <div class="text-center bg-white p-8 rounded-xl shadow-lg border border-gray-100 transition transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://dummyimage.com/120x120/4f46e5/ffffff&text=DN" alt="[Designer's Name]" class="w-24 h-24 md:w-32 md:h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-800">Tola Ayomide</h3>
+                        <p class="text-indigo-600 font-medium mb-2">UI/UX Designer</p>
+                        <p class="text-gray-500 text-sm leading-relaxed">Crafting intuitive, user-focused experiences for accessibility and ease of use under pressure.</p>
+                    </div>
+                     <div class="text-center bg-white p-8 rounded-xl shadow-lg border border-gray-100 transition transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+                         <img src="https://dummyimage.com/120x120/71717a/ffffff&text=AV" alt="Advisors & Volunteers" class="w-24 h-24 md:w-32 md:h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-md">
+                         <h3 class="text-xl font-semibold text-gray-800">Advisors & Volunteers</h3>
+                         <p class="text-indigo-600 font-medium mb-2">Experts & Supporters</p>
+                         <p class="text-gray-500 text-sm leading-relaxed">Supported by activists, security experts, and everyday people who believe in a safer world.</p>
+                    </div>
+                 </div>
+
+                 <div class="mt-16 md:mt-20 max-w-3xl mx-auto" data-aos="fade-up">
+                     <div class="bg-gradient-to-br from-blue-600 to-indigo-700 text-white p-8 md:p-10 rounded-xl shadow-xl relative"> <span class="absolute -top-5 -left-5 text-indigo-300 text-8xl font-bold opacity-20 z-0">“</span>
+                         <div class="flex flex-col md:flex-row items-center gap-6 relative z-10">
+                            <img src="https://dummyimage.com/100x100/ffffff/1e3a8a&text=JP" alt="Jerry P" class="rounded-full shadow-lg border-4 border-indigo-300 flex-shrink-0 w-24 h-24 md:w-28 md:h-28">
+                            <div class="text-center md:text-left">
+                                <p class="text-xl italic text-indigo-100">"They communicated brilliantly during the process. You could tell they wanted to do a great job for us. The final product was outstanding."</p>
+                                <p class="mt-4 font-bold text-white">Jerry P.</p>
+                                <p class="text-sm text-indigo-200">CEO and Founder, Staybridge</p>
+                            </div>
+                         </div>
+                     </div>
+                      <div class="mt-8 flex flex-col md:flex-row justify-between items-center bg-white p-5 rounded-xl shadow-md border border-gray-200">
+                        <div class="flex items-center gap-3 mb-4 md:mb-0">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Trustpilot_logo.png" alt="Trustpilot" class="w-24 h-auto">
+                            <div class="flex items-baseline gap-1"><span class="text-green-600 font-bold text-lg">4.8</span><i class="bi bi-star-fill text-yellow-400"></i><span class="text-gray-500 text-sm">| 8,839 reviews</span></div>
+                        </div>
+                        <button class="border border-gray-700 text-gray-700 px-5 py-2 rounded-full hover:bg-gray-800 hover:text-white transition-all font-medium text-sm">Read All Reviews</button>
+                     </div>
+                 </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-12"> <div class="container mx-auto px-6 text-center">
+            <div class="mb-6 text-sm">
+                 <a href="#home" class="hover:text-white px-3 transition-colors">Home</a>|
+                 <a href="#about" class="hover:text-white px-3 transition-colors">About</a>|
+                 <a href="#pricing" class="hover:text-white px-3 transition-colors">Pricing</a>|
+                 <a href="#faq" class="hover:text-white px-3 transition-colors">FAQs</a>|
+                 <a href="#team" class="hover:text-white px-3 transition-colors">Team</a>
+            </div>
+            <p class="text-sm text-gray-300">&copy; 2025 SafeHelp Technologies. All rights reserved. Based in Ibadan, Oyo, Nigeria.</p>
+            <p class="text-xs mt-2 text-gray-500">Making the world safer, one alert at a time.</p>
+             <div class="mt-6 space-x-5">
+                 <a href="#" aria-label="Facebook" class="text-gray-400 hover:text-blue-400 transition-colors"><i class="bi bi-facebook text-xl"></i></a>
+                 <a href="#" aria-label="Twitter" class="text-gray-400 hover:text-sky-400 transition-colors"><i class="bi bi-twitter-x text-xl"></i></a>
+                 <a href="#" aria-label="LinkedIn" class="text-gray-400 hover:text-blue-500 transition-colors"><i class="bi bi-linkedin text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true, duration: 700, easing: 'ease-out-cubic', // Adjusted easing/duration
+        });
+    </script>
+</body>
+</html>

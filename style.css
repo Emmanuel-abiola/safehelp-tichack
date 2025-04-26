@@ -1,0 +1,9 @@
+#call-simulation h1, #call-simulation h2, #call-simulation h3 {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.7; }
+    50% { opacity: 1; }
+    100% { opacity: 0.7; }
+}
